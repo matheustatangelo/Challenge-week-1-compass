@@ -1,0 +1,21 @@
+db.createCollection('Person')
+
+db.Person.insertOne({
+  name: "John Smith",
+  age: 30,
+  phone: "555-1234",
+  height: 1.8,
+  email: "john@example.com",
+  CPF: "123.456.789-00",
+  dateOfBirth: ISODate("1991-01-01"),
+  address: {
+    zipCode: "12345-678",
+    street: "123 Main St",
+    neighborhood: "Downtown",
+    complement: "Apt 101",
+    city: "São Paulo",
+    state: "SP",
+    country: "Brazil"
+  }
+});
+db.Person.find()
