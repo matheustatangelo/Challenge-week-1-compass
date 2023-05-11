@@ -1,6 +1,7 @@
 db.createCollection('Person')
 
 db.Person.insertOne({
+  "ObjectId": "5f9d3b3b9d3b3b9d3b3b9d3b",
   name: "John Smith",
   age: 30,
   phone: "555-1234",
@@ -9,6 +10,7 @@ db.Person.insertOne({
   CPF: "123.456.789-00",
   dateOfBirth: ISODate("1991-01-01"),
   address: {
+    "ObjectId": "5f9d3b3b9d3b3b9d3b3b9d3c",
     zipCode: "12345-678",
     street: "123 Main St",
     neighborhood: "Downtown",
